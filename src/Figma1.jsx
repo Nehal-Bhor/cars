@@ -1,4 +1,3 @@
-
 import React from "react";
 import "./Figma1.css";
 
@@ -64,7 +63,13 @@ const Figma1 = () => {
     <div className="container">
       <header>
         <button className="back-btn">←</button>
-        <h1>Budget Rentals</h1>
+        <h1 className="header-title">Budget Rental <br />
+        <br /></h1>
+        <h3 className="quotes">Drive your journey, not your budget.</h3>
+        <h3 className="quotes">Rent smart. Drive happy.</h3>
+        <h3 className="quotes">Big journeys start with small prices.</h3>
+   
+    
       </header>
 
       <main className="cards">

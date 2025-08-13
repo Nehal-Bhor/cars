@@ -1,59 +1,79 @@
 import React from "react";
-import "./SedanRental.css";
+import { useNavigate } from "react-router-dom";
+import './SedanRental.css';
+// import './HondaAmez.jpeg';
+import hondaCivic from "./HondaCivic.jpeg";
+import hondaAmez from "./HondaAmez.jpeg";
+import tataTigor from "./TataTigor.jpeg";
+import hyundaiVerna from "./HyundaiVerna.jpeg";
+import marutiCiaz from "./MarutiCiaz.jpeg";
+import hondaCity from "./HondaCity.jpeg";
 
-const cars = [
+//cars che cards
+const sedanData = [
   {
     name: "Honda Civic",
     price: 1500,
     desc: "Better Fuel Economy",
-    image: "/HondaCivic.jpeg",
+    image: hondaCivic,
   },
   {
     name: "Honda Amez",
-    price: 2000,
+    price: 1000,
     desc: "Automatic transmission",
-    image: "/HondaAmez.jpeg",
+    image: hondaAmez,
   },
   {
     name: "Tata Tigor",
-    price: 2500,
+    price: 1000,
     desc: "Manual & Electric",
-    image: "/TataTigor.jpeg",
+    image: tataTigor,
   },
   {
     name: "Hyundai Verna",
-    price: 2800,
+    price: 1000,
     desc: "Better Mileage",
-    image: "/HyundaiVerna.jpeg",
+    image: hyundaiVerna,
   },
   {
-    name: "Mariti Ciaz",
-    price: 1800,
+    name: "Maruti Ciaz",
+    price: 1000,
     desc: "Available CNG Engines",
-    image: "/MarutiCiaz.jpeg",
+    image: marutiCiaz,
   },
   {
     name: "Honda City",
-    price: 2300,
+    price: 1300,
     desc: "Automatic Climate Control",
-    image: "/Honda City.jpeg",
+    image: hondaCity,
   },
 ];
 
 const SedanRental = () => {
-  return (
-    <div className="container">
-      <h1 className="heading">Sedan Rentals</h1>
-      <p className="subtitle">Smooth Drives with Style & Comfort.</p>
+  const navigate = useNavigate();
 
-      <div className="car-grid">
-        {cars.map((car, index) => (
-          <div className="card" key={index}>
-            <img src={car.image} alt={car.name} />
-            <h2><b>{car.name}</b></h2>
-            <p className="price">Rs.{car.price}/hr</p>
+  return (
+    <div className="sedan-container">
+      <div className="sedan-hero">
+        <div className="sedan-hero-content">
+          <h1>SEDAN</h1>
+           <p className="subtitle">Smooth Drives with Style & Comfort.</p>
+        </div>
+      </div>
+
+      <br />
+      <hr />
+
+      <div className="card-grid">
+        {sedanData.map((car, index) => (
+          <div className="sedan-card" key={index}>
+            <img className="box" src={car.image} alt={car.name} />
+            <h3>{car.name}</h3>
+             <p className="price">Rs.{car.price}/hr</p>
             <p className="desc">{car.desc}</p>
             <button className="book-btn">BOOK NOW</button>
+
+           
           </div>
         ))}
       </div>
