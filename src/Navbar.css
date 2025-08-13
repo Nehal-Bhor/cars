@@ -1,0 +1,73 @@
+/* src/components/Navbar.css */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0c1125;
+  padding: 15px 40px;
+  border-top: 3px solid #00bfff;
+  height: 90px;
+  width: 100%;      
+  position: relative;
+  right: 0px;
+  box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.navbar-logo img {
+  width: 65px;
+  height: 65px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 80px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-links li a {
+  text-decoration: none;
+  color: white;
+  font-size: 27px;
+}
+
+.navbar-profile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+.user-icon {
+  height: 50px;
+  width: 50px;
+  color: white;
+  cursor: pointer;
+}
+
+.black-navbar {
+  background-color: rgb(15, 14, 14) !important;
+  color: white;
+}
+
+.black-navbar a {
+  color: white !important;
+}
+
+.black-navbar .user-icon {
+  color: white !important;
+}
+
