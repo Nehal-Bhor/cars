@@ -16,7 +16,7 @@ const Navbar = ({ isBlack }) => {
 
       <ul className="navbar-links">
         <li><Link to="/home">Home</Link></li>
-        <li><Link to="/category">Category</Link></li>
+        <li><Link to="/Categories">Category</Link></li>
         <li><Link to="/services">Services</Link></li>
         <li><Link to="/about">About Us</Link></li>
       </ul>
