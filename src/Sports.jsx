@@ -1,12 +1,14 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Styling.css";
+import "./Sports.css";
 
-import GT63Img from "./GT63Eperf.jpg";
-import M2Img from "./M2.jpg";
-import M3Img from "./M3.jpg";
-import M5Img from "./M5.jpg";
-import GTrImg from "./GTR.jpg";
+
+import GT63Img from "./GT63Eperf.jpeg";
+import M2Img from "./M2.jpeg";
+import M3Img from "./M3.jpeg";
+import M5Img from "./M5.jpeg";
+import GTrImg from "./GTR.jpeg";
+import BGimg from "./bgImg.jpeg"
 
 const sportData = [
   {
@@ -46,14 +48,14 @@ const sportData = [
   },
 ];
 
-const sport = () => {
+const Sport = () => {
   const navigate = useNavigate();
 
   return (
     <div className="sport-container">
-      <div className="sport-hero">
+      <div className="sport-hero" style={{ backgroundImage: `url(${BGimg})` }}>
         <div className="sport-hero-content">
-          <h1>SUV</h1>
+          <h1>Sports</h1>
           <p>
             Conquer every journey with <br />
             style and strength. <br />
@@ -96,4 +98,4 @@ const sport = () => {
   );
 };
 
-export default sport;
+export default Sport;

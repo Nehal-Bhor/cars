@@ -59,7 +59,9 @@ import Categories from './Categories';
 import Figma1 from './Figma1';
 import Figma2ex from './Figma2ex';
 import SedanRental from './SedanRental';
-
+import Luxury from './Luxury';
+import About from './About';
+import Sports from './Sports';
 
 
 function App() {
@@ -85,6 +87,11 @@ function App() {
         <Route path="/figma1" element={<Figma1 />} />
         <Route path="/figma2ex" element={<Figma2ex />} />
         <Route path="/sedan" element={<SedanRental />} />
+        <Route path="/about" element={<About />} />
+
+
+               <Route path="/luxury" element={<Luxury />} />
+        <Route path="/sports" element={<Sports />} />
 
     
 

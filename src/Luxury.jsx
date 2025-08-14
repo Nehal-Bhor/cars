@@ -2,12 +2,14 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./Styling.css";
 
-import cClassImg from "./c-class.webp";
+import cClassImg from "./c-class.jpeg";
 import eClassImg from "./e-class.jpeg";
 import camryImg from "./camry.jpeg";
-import BMWseries from "./7series.webp";
-import Lexus from "./Lexus.webp";
-import Maybach from "./Maybach.jpg";
+import BMWseries from "./BMWseries.jpeg";
+import Lexus from "./lexus.jpeg";
+import Maybach from "./Maybach.jpeg";
+import luxuImg from "./luxu.jpeg";
+
 
 const luxData = [
   {
@@ -54,12 +56,12 @@ const luxData = [
   },
 ];
 
-const Lux = () => {
+const Luxury = () => {
   const navigate = useNavigate();
 
   return (
     <div className="lux-container">
-      <div className="lux-hero">
+      <div className="lux-hero" style={{ backgroundImage: `url(${luxuImg})` }}>
         <div className="lux-hero-content">
           <h1>Luxury</h1>
           <p>
@@ -83,7 +85,6 @@ const Lux = () => {
             <p className="details">
               {car.transmission}, {car.fuel}
             </p>
-
             <button
               className="book-btn"
               onClick={() =>

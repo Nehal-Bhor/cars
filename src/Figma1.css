@@ -60,13 +60,18 @@ body {
     color: white;
     cursor: pointer;
   }
-  .cards {
+  /* .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
     gap: 25px;
     padding: 30px;
-  }
-  
+  } */
+  .cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
 
   .card {
     background: white;

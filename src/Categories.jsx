@@ -59,7 +59,7 @@ function Categories() {
           <h1 style={styles.luxuryText}>MODERN LUXURY<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;IS YOURS</h1>
         </div>
         {currentSection === 'luxury' && (
-          <button style={styles.buttonBottomRight}>Get Started</button>
+          <button style={styles.buttonBottomRight} onClick={() => navigate('/luxury')}>Get Started</button>
         )}
       </div>
 
@@ -69,7 +69,7 @@ function Categories() {
           <h1 style={styles.sportsText}>WHERE POWER<br />MEETS PRECISION</h1>
         </div>
         {currentSection === 'sedan' && (
-          <button style={styles.buttonBottomRight}>Get Started</button>
+          <button style={styles.buttonBottomRight} onClick={() => navigate('/sports')}>Get Started</button>
         )}
       </div>
 
@@ -166,7 +166,9 @@ const styles = {
     fontWeight: '900',
     lineHeight: '1.3',
     color: '#fff',
-    textShadow: '2px 2px 8px rgba(0,0,0,0.7)'
+    textShadow: '2px 2px 8px rgba(0,0,0,0.7)',
+    top:'75px',
+    position:'relative'
   },
   buttonBottomRight: {
     position: 'absolute',

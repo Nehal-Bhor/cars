@@ -1,4 +1,4 @@
-.lux-container {
+.sport-container {
   font-family: Arial, sans-serif;
   background-color: #1f1f1f;
   color: white;
@@ -6,7 +6,7 @@
   margin: 0;
 }
 
-.lux-hero {
+.sport-hero {
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -16,13 +16,13 @@
   text-align: center;
 }
 
-.lux-hero-content h1 {
+.sport-hero-content h1 {
   font-family: 'K2D', sans-serif;
   font-size: 4rem;
   margin-bottom: 10px;
 }
 
-.lux-hero-content p {
+.sport-hero-content p {
   font-family: 'Jura', sans-serif;
   font-size: 1.55rem;
   max-width: 600px;
@@ -38,7 +38,7 @@
   padding-right: 10px; 
 }
 
-.lux-card {
+.sport-card {
   background-color: #fefdfd;
   border-radius: 10px;
   padding: 15px;
@@ -46,12 +46,12 @@
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.lux-card:hover {
+.sport-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.lux-card img {
+.sport-card img {
   width: 100%;
   height: auto;
   max-height: 262px;
@@ -59,7 +59,7 @@
   border-radius: 5px;
 }
 
-.lux-card h3 {
+.sport-card h3 {
   margin: 10px 0 5px;
   color: #050000;
 }

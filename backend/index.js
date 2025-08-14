@@ -55,6 +55,8 @@ const dotenv = require('dotenv');
 const userRoutes = require('./routes/userRoutes');
 const formRoutes = require('./routes/formRoutes');
 const carRoutes = require('./routes/carRoutes');
+const logRoutes = require('./routes/logRoutes');
+
 
 
 
@@ -65,6 +67,9 @@ app.use(cors());
 app.use(express.json());
 
 app.use('/api/user', userRoutes);
+
+app.use('/api/log', logRoutes);
+
 
 app.use('/api/forms', formRoutes);
 
