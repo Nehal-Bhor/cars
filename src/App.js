@@ -45,7 +45,9 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-router-dom';
 import Login from './Login';
 import Signup from './Signup';
-import HomePage from './HomePage';
+import HomePage1 from './HomePage1';
+// import HomePage from './HomePage';
+
 import Suv from './Suv';
 import Payr from './Payr';
 import Carinfo from './Carinfo';
@@ -60,40 +62,42 @@ import Figma1 from './Figma1';
 import Figma2ex from './Figma2ex';
 import SedanRental from './SedanRental';
 import Luxury from './Luxury';
-import About from './About';
+// import About from './About';
 import Sports from './Sports';
 
 
 function App() {
   return (
     <BrowserRouter>
-    
-      
-       <Routes>
-      <Route path="/suv" element={<Suv />} />
+
+
+      <Routes>
+        <Route path="/suv" element={<Suv />} />
         <Route path="/carinfo" element={<Carinfo />} />
         <Route path="/pay" element={<Payr />} />
 
-        <Route path="/" element={<Login />} />
+        <Route path="/login" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
-        <Route path="/home" element={<HomePage />} /> 
+        <Route path="/" element={<HomePage1 />} />
+        {/* <Route path="/home" element={<HomePage />} /> */}
+
         <Route path="/payment" element={<PaymentPage />} />
         <Route path="/card-payment" element={<CardPaymentPage />} />
         <Route path="/upi-payment" element={<UPIPaymentPage />} />
         <Route path="/thankyou" element={<ThankYouPage />} />
-        <Route path="/processing" element={<PaymentProcessing />} /> 
+        <Route path="/processing" element={<PaymentProcessing />} />
         <Route path="/navbar" element={<Navbar />} />
         <Route path="/categories" element={<Categories />} />
         <Route path="/figma1" element={<Figma1 />} />
         <Route path="/figma2ex" element={<Figma2ex />} />
         <Route path="/sedan" element={<SedanRental />} />
-        <Route path="/about" element={<About />} />
+        {/* <Route path="/about" element={<About />} /> */}
 
 
-               <Route path="/luxury" element={<Luxury />} />
+        <Route path="/luxury" element={<Luxury />} />
         <Route path="/sports" element={<Sports />} />
 
-    
+
 
       </Routes>
     </BrowserRouter>

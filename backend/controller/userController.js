@@ -41,6 +41,9 @@ const signup = async (req, res) => {
 
 
 
+module.exports = { signup  }; 
+
+
 
 
 
@@ -63,5 +66,3 @@ const signup = async (req, res) => {
 //     res.status(500).json({ error: err.message });
 //   }
 // };
-
-module.exports = { signup  };

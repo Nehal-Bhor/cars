@@ -48,14 +48,41 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//ori
+
+
 const express = require('express');
 const mongoose = require('mongoose');
+// const generateBillPDF = require("./billGenerator");
+// const sendBillEmail = require("./emailSender"); // if you’re emailing too
+
 const cors = require('cors');
 const dotenv = require('dotenv');
 const userRoutes = require('./routes/userRoutes');
 const formRoutes = require('./routes/formRoutes');
 const carRoutes = require('./routes/carRoutes');
 const logRoutes = require('./routes/logRoutes');
+// const billRoute = require('./routes/billRoute');
+// const paymentRoutes = require('./routes/paymentRoutes');
+
 
 
 
@@ -75,6 +102,26 @@ app.use('/api/forms', formRoutes);
 
 app.use('/api/cars', carRoutes);
 
+// app.use("/api", billRoute);
+
+// app.use("/api", paymentRoutes);
+
+// app.post("/generate-bill", async (req, res) => {
+//   try {
+//     const order = req.body; // get order details from frontend
+//     const filePath = `./invoice_${Date.now()}`.pdf;
+
+//     await generateBillPDF(order, filePath);
+//     // If sending via email:
+//     // await sendBillEmail(order.email, filePath);
+
+//     res.json({ success: true, message: "Bill generated successfully" });
+//   } catch (err) {
+//     res.status(500).json({ success: false, error: err.message });
+//   }
+// });
+
+
 
 mongoose.connect(process.env.MONGO_URI, {
     useNewUrlParser: true,
@@ -82,5 +129,30 @@ mongoose.connect(process.env.MONGO_URI, {
 }).then(() => console.log('MongoDB connected'))
     .catch((err) => console.log(err));
 
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
