@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import './SedanRental.css';
+import './styles/SedanRental.css';
 // import './HondaAmez.jpeg';
 import hondaCivic from "./HondaCivic.jpeg";
 import hondaAmez from "./HondaAmez.jpeg";

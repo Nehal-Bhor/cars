@@ -1,19 +1,14 @@
 import React from "react";
 import { FaCar, FaHeadset, FaClock, FaUserShield } from "react-icons/fa";
-import "./About.css";
-
+import "./styles/About.css";
+import Navbar from "./Nav1";
 function About() {
   return (
-    <div className="about-container">
-      
-      {/* Hero Section */}
-      <section className="hero">
-        <h1>About RENTXCARZ</h1>
-        <p>Your trusted partner for hassle-free car rentals...</p>
-      </section>
+    <>
+          <Navbar/>
 
-      {/* Mission & Vision */}
-      <section className="mission-vision">
+    <div className="about-container">
+      <div className="mission-vision">
         <div className="card">
           <h2>Our Mission</h2>
           <p>To provide the best quality vehicles...</p>
@@ -22,7 +17,7 @@ function About() {
           <h2>Our Vision</h2>
           <p>To be the most preferred and trusted car rental brand...</p>
         </div>
-      </section>
+      </div>
 
       {/* Why Choose Us */}
       <section className="why-choose-us">
@@ -58,6 +53,7 @@ function About() {
         <a href="tel:+919876543210" className="contact-btn">Call Now</a>
       </section>
     </div>
+    </>
   );
 }
 

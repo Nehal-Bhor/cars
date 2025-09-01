@@ -1,5 +1,5 @@
 import React from "react";
-import "./CardPaymentPage.css";
+import "./styles/CardPaymentPage.css";
 import { FaUserCircle } from "react-icons/fa";
 import { MdPhoneIphone, MdCreditCard, MdAccountBalance } from "react-icons/md";
 import { useNavigate, useLocation } from "react-router-dom";

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Figma1.css";
+import "./styles/Figma1.css";
 
 const cars = [
   {

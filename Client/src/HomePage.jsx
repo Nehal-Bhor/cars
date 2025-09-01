@@ -1,4 +1,4 @@
-import './HomePage.css';
+import './styles/HomePage.css';
 import Navbar from './Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebook, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';

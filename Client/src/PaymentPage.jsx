@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./PaymentPage.css";
+import "./styles/PaymentPage.css";
 import { FaUserCircle } from "react-icons/fa";
 import { MdPhoneIphone, MdCreditCard, MdAccountBalance } from "react-icons/md";
 import { useNavigate, useLocation } from "react-router-dom";

@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Navbar.css'; // Add your custom styles here
+import './styles/Navbar.css'; // Add your custom styles here
 import { FaUserCircle } from "react-icons/fa";
 
 

@@ -1,5 +1,5 @@
 import React from "react";
-import "./Figma2ex.css";
+import "./styles/Figma2ex.css";
 
 const bookingCars = [
   {

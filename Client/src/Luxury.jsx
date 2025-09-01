@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Styling.css";
+import "./styles/Styling.css";
 
 import cClassImg from "./c-class.jpeg";
 import eClassImg from "./e-class.jpeg";

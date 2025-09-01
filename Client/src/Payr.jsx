@@ -1,6 +1,6 @@
 import React from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
-import './Payr.css';
+import './styles/Payr.css';
 import { Link } from 'react-router-dom';
 import { FaUserCircle } from "react-icons/fa";
 

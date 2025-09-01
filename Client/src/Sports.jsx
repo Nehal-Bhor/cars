@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Sports.css";
+import "./styles/Sports.css";
 
 
 import GT63Img from "./GT63Eperf.jpeg";

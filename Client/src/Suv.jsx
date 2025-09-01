@@ -1,6 +1,6 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import "./Suv.css";
+import "./styles/Suv.css";
 
 //import kele img src madun
 import gwagonImg from "./gw2.jpg";
