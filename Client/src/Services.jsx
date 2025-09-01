@@ -1,15 +1,16 @@
 import React from "react";
 import "./Services.css";
 import { FaCarSide, FaCrown, FaRoute } from "react-icons/fa";
-import sport from '../src/suvf.jpg';
 import Navbar from "./Navbar";
-import suv from '../src/suvf.jpg';
+
+import sport from '../src/suvf.jpg';
+import suv from '../src/M2.jpeg';
 
 import Thar from '../src/t.jpg';
 
 import TataTigor from '../src/TataTigor.jpeg';
 
-import budget from '../src/suvf.jpg';
+import budget from '../src/M5.jpeg';
 
 export default function Services() {
   const services = [
@@ -50,9 +51,11 @@ export default function Services() {
   ];
 
   return (
+    <>
+        <Navbar/>
+
           <div className="services-container">
 
-    <Navbar/>
       <h1 className="services-title">Our Services</h1>
       <p className="services-subtitle">
         We provide top-class rental cars with unbeatable prices and exceptional service.
@@ -71,5 +74,6 @@ export default function Services() {
         ))}
       </div>
  </div>
+ </>
 );
 }

@@ -2,13 +2,13 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import "./styles/Styling.css";
 
-import cClassImg from "./c-class.jpeg";
-import eClassImg from "./e-class.jpeg";
-import camryImg from "./camry.jpeg";
+import cClassImg from "../src/c-class.jpeg";
+import eClassImg from "../src/e-class.jpeg";
+import camryImg from "../src/camry.jpeg";
 import BMWseries from "./BMWseries.jpeg";
-import Lexus from "./lexus.jpeg";
-import Maybach from "./Maybach.jpeg";
-import luxuImg from "./luxu.jpeg";
+import Lexus from "../src/lexus.jpeg";
+import Maybach from "../src/Maybach.jpeg";
+import luxuImg from "../src/luxu.jpeg";
 
 
 const luxData = [
