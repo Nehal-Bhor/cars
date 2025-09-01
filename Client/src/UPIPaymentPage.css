@@ -1,0 +1,149 @@
+body {
+  margin: 0;
+  font-family: 'Georgia', serif;
+}
+
+.payment-container {
+  background: linear-gradient(to bottom, #f0f0df, #d5d5c1);
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: #071731;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li {
+  cursor: pointer;
+}
+
+.user-icon {
+  font-size: 24px;
+}
+.payment-box {
+  background-color: #fffde8;
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+
+
+.payment-heading {
+    font-family: 'Jacques Francois', serif !important;
+
+  background-color: #d8ab6b;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.select-method {
+      font-family: 'Jacques Francois', serif !important;
+
+  margin: 20px 0 10px;
+  font-weight: 600;
+}
+
+.payment-methods {
+
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.method {
+    font-family: 'Jacques Francois', serif !important;
+
+  background-color: white;
+  width: 30%;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 0 5px #ccc;
+  font-size: 12px;
+  
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.method.selected {
+  border: 2px solid green;
+}
+
+.label {
+    font-family: 'Jacques Francois', serif !important;
+
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.input {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+    font-family: 'Jacques Francois', serif !important;
+
+}
+
+.btn {
+    font-family: 'Jacques Francois', serif !important;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #0b1431;
+  color: white;
+  font-weight: bold;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  left: 150px;
+  bottom: 20px;
+}
+
+.btn.primary {
+  background-color: #0b1431;
+}
+
+.btn:hover {
+  background-color: #081122;
+}
+
+.note {
+  font-size: 12px;
+  text-align: center;
+  color: #555;
+}

@@ -1,0 +1,42 @@
+.processing-container {
+    min-height: 100vh;
+    height: 100%;
+  background: linear-gradient(to bottom, #f0f0df, #d5d5c1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.processing-text {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: 'Jacques Francois', serif;
+  color: #071731;
+  margin-bottom: 40px;
+  margin-top: 200px;
+}
+
+.spinner {
+  border: 8px solid #e0e0e0;
+  border-top: 8px solid #071731;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tagline {
+  font-size: 20px;
+  font-family: 'Jacques Francois', serif;
+  color: #071731;
+  margin-top: 12px;
+  text-align: center;
+}
+

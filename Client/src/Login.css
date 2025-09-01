@@ -1,0 +1,100 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Georgia', serif;
+}
+
+.left-panel {
+  width: 50%;
+  background-color: #0f172a; /* Deep purple */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.left-panel .car-logo {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.left-panel h2 {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.left-panel h2 span {
+  color: #facc15; /* Yellow */
+}
+
+.right-panel {
+  width: 50%;
+  background-color: #fefce8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.form-box {
+
+  width: 80%;
+  max-width: 400px;
+  padding: 2rem;
+  background-color: #fffbea;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-box input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+.text{
+  font-size: 15px;
+}
+
+.login-btn,
+.signup-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: orange;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: gray;
+}
+
+.message {
+  color: green;
+  margin-top: 10px;
+}
+
+.signup-text,
+.login-text {
+  margin-top: 15px;
+  font-size: 0.9rem;
+}
+
+.signup-link,
+.login-link {
+  color: #1e1b4b;
+  text-decoration: underline;
+  font-weight: bold;
+  cursor: pointer;
+}
